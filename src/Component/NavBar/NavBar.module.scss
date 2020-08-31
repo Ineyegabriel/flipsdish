@@ -1,0 +1,46 @@
+.root{
+    margin: auto;
+    max-width: 1400px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1;
+
+    .a {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 700;
+    margin: 7px;
+    display: -webkit-inline-box;
+    display: inline-flex;
+    padding: .35rem;
+    padding-right: 1.25rem;
+
+    -webkit-box-align: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,.08);
+    color: #5e5e5e;
+    padding: .4rem;
+    
+    text-transform: capitalize;
+    -webkit-transition: .1s all ease;
+    transition: .1s all ease;
+    }
+}
+
+.navButtons>span{
+    color: #000;
+}
