@@ -10,6 +10,7 @@ import { red } from "@material-ui/core/colors";
 import { useLocation } from "react-router";
 import Styles from "./MenuItemCard.module.scss";
 import { Link } from "react-router-dom";
+import {ReactComponent as Logo} from '../../food.svg';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -48,7 +49,11 @@ const MenuItemCard = ({
       <CardHeader
         avatar={
           <Avatar aria-label="recipe" className={classes.avatar}>
-            F
+            {
+            Price === 0 ?
+             <Logo className={Styles.logo}/> : 
+            <span className={Styles.priceTag}>&euro;{Price}</span> 
+            }  
           </Avatar>
         }
         title={Name}

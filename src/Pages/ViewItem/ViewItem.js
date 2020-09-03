@@ -65,8 +65,8 @@ const ViewItem = () => {
               secondary={Alcohol ? <span>Alcoholic Drink</span> : null}
             />
             <ListItemText
-              className={Style.itemtitle}
-              secondary={Price ? <span>{Price}</span> : null}
+              className={Style.price}
+              secondary={Price ?  <span>&euro;{Price}</span> : null}
             />
           </ListItem>
           <Divider variant="inset" component="li" />
@@ -96,8 +96,8 @@ const ViewItem = () => {
               secondary={Alcohol ? <span>Alcoholic Drink</span> : null}
             />
             <ListItemText
-              className={Style.itemtitle}
-              secondary={Price ? <span>{Price}</span> : null}
+              className={Style.price}
+              secondary={Price ? <span>&euro;{Price}</span> : null}
             />
           </ListItem>
           <Divider variant="inset" component="li" />
